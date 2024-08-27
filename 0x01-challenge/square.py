@@ -1,7 +1,7 @@
 #!/usr/bin/python3i
 """ module to print area and perimeter of a square """
 
-class square():
+class Square():
     """ class square """
     
     width = 0
@@ -17,7 +17,7 @@ class square():
         """ Area of the square """
         return self.width * self.height
 
-    def PerimeterOfMySquare(self):
+    def Permiter_of_my_square(self):
         """ perimeter of the square """
         return (self.width * 2) + (self.height * 2)
 
@@ -28,7 +28,7 @@ class square():
 if __name__ == "__main__":
     """ main method """
 
-    s = square(width=12, height=9)
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.PerimeterOfMySquare())
+    print(s.Permiter_of_my_square())
