@@ -1,12 +1,15 @@
-#!/usr/bin/python3
+#!/usr/bin/python3i
+""" module to print area and perimeter of a square """
 
 class square():
+    """ class square """
     
     width = 0
     height = 0
 
     
     def __init__(self, *args, **kwargs):
+        """ initializing method """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -14,15 +17,18 @@ class square():
         """ Area of the square """
         return self.width * self.height
 
-    def PermiterOfMySquare(self):
+    def PerimeterOfMySquare(self):
+        """ perimeter of the square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ gives string of the sides """
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
+    """ main method """
 
     s = square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.PermiterOfMySquare())
+    print(s.PerimeterOfMySquare())
